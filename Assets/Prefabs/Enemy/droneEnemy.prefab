@@ -100,12 +100,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b166ac11e341bd34a9dfd2a9ab6381f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHp: 3
+  enemyHp: 8
   dropGold: 0
-  speed: 8
+  speed: 6.5
   isRun: 0
   dropExp: 20
-  enemyIsDie: 0
+  thisObjDamage: 0
   enemyType: 1
   attackRadius: 7
   attackCooldown: 0
@@ -116,6 +116,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 0
+  hartPrefab: {fileID: 2579360012066214853, guid: 2d2ad0a31c86df542bd278b83d803032, type: 3}
   player: {fileID: 0}
   home: {x: 0, y: 0}
 --- !u!50 &7355926691067103251

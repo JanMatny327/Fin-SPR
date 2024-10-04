@@ -20,8 +20,6 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public Slider hpBar; //HP바
     GameObject hpText; // HP바 잔량 표시
-    public Slider expBar; // EXP바
-    GameObject expText;
     public Rigidbody2D rig2D; // 플레이어 리지디바디
     public BoxCollider2D box2D; // 플레이어 박스 콜라이더
     public SpriteRenderer skin; // 플레이어 스프라이트
@@ -87,16 +85,12 @@ public class PlayerController : MonoBehaviour
     public BoxCollider2D bossRoomWall;
     public GameObject bossCutScene;
 
-    public bool isCutScene = false;
-
     private void Awake()
     {
         Instance = this;
         animator = GetComponent<Animator>();
         hpBar.value = (float)gameData.hp / gameData.maxHP;
-        expBar.value = (float)gameData.exp / gameData.levelUpExpBox[0];
         this.hpText = GameObject.Find("HpText");
-        this.expText = GameObject.Find("EXPText");
         gameData.playerSpeed = 8.0f;
         gameData.hp = 100;
         gameData.jumpPower = 35;
@@ -116,7 +110,7 @@ public class PlayerController : MonoBehaviour
         DieImg.color = dieImgColor;
         StartCoroutine(playerStateCheck());
 
-        HandleBarUi();
+        HandleHp();
 
         if (coolDown > 1)
         {
@@ -151,6 +145,7 @@ public class PlayerController : MonoBehaviour
         playerTalk();
         rayObject();
         PlayerShoot();
+        PlayerDrop();
 
         //스프라이트 좌우 반전
         if (move > 0 && !m_FacingRight)
@@ -192,6 +187,14 @@ public class PlayerController : MonoBehaviour
         if (collision.tag == "Trap")
         {
             Trap.Instance.TrapHit(1.5f);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "HealingItem")
+        {
+            Destroy(collision.gameObject);
+            gameData.hp += 10;
         }
     }
 
@@ -267,6 +270,8 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            float xMove = Input.GetAxis("Horizontal");
+            float zMove = Input.GetAxis("Vertical");
             if (Input.GetKeyUp(KeyCode.J))
             {
                 this.animator.SetInteger("RunShoot", 0);
@@ -308,7 +313,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (BulletSystem.Instance.whobulletType == BulletSystem.WhoBulletType.bossBullet)
         {
-            gameData.hp -= damage;
+            gameData.hp -= GetComponent<BossSystem>().bossDamage;
             if (BulletSystem.Instance.abilityBulletType == BulletSystem.AbilityBulletType.slow)
             { gameData.playerSpeed /= 4f; Invoke("UnSlow", 1.5f); }
         }
@@ -319,13 +324,10 @@ public class PlayerController : MonoBehaviour
         this.gameData.playerSpeed = 8f;
     }
 
-    void HandleBarUi()
+    void HandleHp()
     {
         hpBar.value = Mathf.Lerp(hpBar.value, (float)gameData.hp / (float)gameData.maxHP, Time.deltaTime * 10);
         this.hpText.GetComponent<TextMeshProUGUI>().text = gameData.hp + " / " + gameData.maxHP;
-
-        expBar.value = Mathf.Lerp(expBar.value, (float)gameData.exp / (float)gameData.levelUpExpBox[gameData.level - 1], Time.deltaTime * 10);
-        this.expText.GetComponent<TextMeshProUGUI>().text = gameData.exp + " / " + gameData.levelUpExpBox[gameData.level - 1];
     }
 
     void PlayerJump() // 플레이어 점프
@@ -422,6 +424,15 @@ public class PlayerController : MonoBehaviour
             shootCurTime -= Time.deltaTime;
         }
     }
+
+    void PlayerDrop()
+    {
+        if (gameObject.transform.position.y < -13)
+        {
+            gameObject.transform.position = new Vector3(83, -4, 0);
+            gameData.hp -= 10;
+        }
+    }
     public void Replay()
     {
         dieImgColor = Color.black;
@@ -435,8 +446,6 @@ public class PlayerController : MonoBehaviour
         this.gameData.playerSpeed = 8.0f;
         this.gameData.jumpPower = 1800;
         this.gameData.hp = 100;
-        this.gameData.level = 1;
-        this.gameData.exp = 0;
         this.dieState = false;
         dieImgColor.a = Mathf.MoveTowards(dieImgColor.a, 0f, -1f * Time.deltaTime);
     }
@@ -449,7 +458,7 @@ public class PlayerController : MonoBehaviour
     {
         skillCoolTimeText.SetActive(true);
         this.animator.SetBool("isParring", true);
-        shootCoolTime = 0.15f;
+        shootCoolTime = 0.1f;
         yield return new WaitForSeconds(3f);
         shootCoolTime = maxShootCoolTime;
     }
@@ -486,7 +495,6 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.tag == "BossRoomGateWall")
         {
-            isCutScene = true;
             StartCoroutine(BossCutScene());
             isBossRoom = true;
             bossRoomWall.enabled = true;
@@ -498,7 +506,6 @@ public class PlayerController : MonoBehaviour
         bossCutScene.SetActive(true);
         yield return new WaitForSeconds(1.2f);
         Destroy(bossCutScene);
-        isCutScene = false;
         boss.SetActive(true);
     }
 }

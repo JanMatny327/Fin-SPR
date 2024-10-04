@@ -188,6 +188,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 512
+  hartPrefab: {fileID: 2579360012066214853, guid: 2d2ad0a31c86df542bd278b83d803032, type: 3}
   player: {fileID: 8300582310120911835, guid: 446e214184aeeac42bb7d4b0e62d5be8, type: 3}
   home: {x: 0, y: 0}
 --- !u!95 &3815420133702984075

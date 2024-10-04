@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class Columns : MonoBehaviour
 {
+    public int columnNumber;
     public Item item;
     public Image itemIcon;
 
@@ -12,6 +14,7 @@ public class Columns : MonoBehaviour
     {
         ItemAlpha(0);
     }
+
     public void UpdateColumnUI()
     {
         itemIcon.sprite = item.itemImage;

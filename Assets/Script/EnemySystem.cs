@@ -30,6 +30,8 @@ public class EnemySystem : MonoBehaviour
     public float spawnDistance = -2f;
     public LayerMask targetLayer;
 
+
+    public GameObject hartPrefab;
     Transform enemyTransform;
     Animator animator;
     SpriteRenderer spriteRenderer;
@@ -54,7 +56,6 @@ public class EnemySystem : MonoBehaviour
     }
     private void Update()
     {
-        EnemyStateCheck();
         EnemyAttack();
 
         if (PlayerController.Instance.isParring == true)
@@ -66,6 +67,8 @@ public class EnemySystem : MonoBehaviour
             FollowPlayer();
             enemyWalkAnim();
         }
+        EnemyStateCheck();
+
 
         if (this.attackCooldown > 0f)
             this.attackCooldown -= Time.deltaTime;
@@ -73,9 +76,10 @@ public class EnemySystem : MonoBehaviour
     void EnemyStateCheck()
     {
         if (enemyHp <= 0 && !enemyIsDie)
-        {
+         {
             animator.SetTrigger("enemyDeath");
             enemyIsDie = true;
+            Instantiate(hartPrefab, gameObject.transform.position, gameObject.transform.rotation);
             Invoke("DestroyedEnemy", 0.37f);
             return;
         }

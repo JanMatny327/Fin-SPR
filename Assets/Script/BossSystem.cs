@@ -21,31 +21,26 @@ public class BossSystem : MonoBehaviour
     [SerializeField] private Transform target;
     public int speedX; // rush 최대속도
     int DIRECTION;
-    bool bossCritical = false;
-
-  
+    public bool isTurret; // 터렛이 생존해 있는가
+    public int turretCount = 0; // 터렛이 몇개인가
+    [SerializeField] private BossTurretSystem turretSystem;
 
     [Header("BossProfile")]
     public GameObject bossProfile; // 보스 체력바
     public Slider hpBar; //HP바
     public TextMeshProUGUI hpText; // HP바 잔량 표시
-    public Vector2 curPos = new Vector2(49.221f, 14.169f); // 보스의 원래 위치 저장
 
 
 
     [Header("Boss Bullet List")]
     [SerializeField] private GameObject[] bossBullet; // 일반 총알 Prefab 배열
-    [SerializeField] private GameObject[] razerBullet; // 레이저 위치
+    [SerializeField] private GameObject[] bossTurret; // 보스가 소환할 잡몹
 
-    [Header("Boss Bullet Renderer")]
-    [SerializeField] private SpriteRenderer[] bulletPos;
 
     [Header("Boss Attack")]
     [SerializeField] Transform[] spinbulletPos; // 회전 보스 총알 날라갈 위치
     [SerializeField] Transform[] missilebulletPos; // 유도탄 보스 총알 날라갈 위치
     [SerializeField] Transform[] turretPos; // 터렛 소환될 위치
-    [SerializeField] Transform[] skyBulletPos; // 하늘 총알 위치
-    [SerializeField] Transform[] splashBulletPos; // 스플레쉬
     public float attackCoolTime; // 공격 쿨타임
     private float attackCurTime; // 현재 공격 타임
     bool isAttack;
@@ -65,12 +60,10 @@ public class BossSystem : MonoBehaviour
     private static readonly int MISSILE = 2;
     private static readonly int RUSH = 3;
 
-    [Header("Boss Damage Setting")]
-    public int RushDamage = 45;
-
     private WaitForSeconds endOfPatternWait;
     private WaitForSeconds waitOfPatternWait;
-    
+
+
 
     void Start()
     {
@@ -83,7 +76,6 @@ public class BossSystem : MonoBehaviour
         maxBossHp = bossHp;
         StartCoroutine(RotateBullet());
         hpBar.value = (float)bossHp / maxBossHp;
-        lookPlayer();
     }
     void Update()
     {
@@ -91,21 +83,15 @@ public class BossSystem : MonoBehaviour
         BossLevel();
         HandleHp();
     }
-    void isBossRoom()
-    {
-        if (PlayerController.Instance.isBossRoom == true)
-        {
-            bossProfile.SetActive(true);
-        }
-    }
+
     void HandleHp()
     {
         hpBar.value = Mathf.Lerp(hpBar.value, (float)bossHp / maxBossHp, Time.deltaTime * 10);
         hpText.text = bossHp + "/" + maxBossHp;
     }
-    public void getDamage(int damage)
+    public void getDamage()
     {
-        this.bossHp -= damage;
+        bossHp -= PlayerController.Instance.gameData.damage;
         return;
     }
     void BossBullet()
@@ -137,21 +123,18 @@ public class BossSystem : MonoBehaviour
     }
     void BossLevel()
     {
-        if (bossHp <= maxBossHp / 2 && bossHp > maxBossHp / 3 && bossCritical == false)
+        if (bossHp <= maxBossHp / 2 && bossHp > maxBossHp / 3)
         {
             bossLevel = 2;
             bossAnim.SetBool("isCritical", true);
-            bossCritical = true;
+            Invoke("BossPattern", 2);
         }
-
-        /*
         else if (bossHp <= maxBossHp / 3)
         {
             bossLevel = 3;
             bossAnim.SetBool("isCritical", true);
             Invoke("BossPattern", 2);
         }
-        */
 
     }
     void lookPlayer()
@@ -164,8 +147,7 @@ public class BossSystem : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            PlayerController.Instance.gameData.hp -= this.RushDamage;
-            transform.position = curPos;
+
         }
         else if (collision.gameObject.tag == "Wall")
         {
@@ -177,7 +159,6 @@ public class BossSystem : MonoBehaviour
     {
         yield return new WaitForSeconds(roopPattern);
         isPattern = false;
-        isWall = true;
     }
 
     void BossPattern()
@@ -200,21 +181,15 @@ public class BossSystem : MonoBehaviour
         }
         else if (bossLevel == 2)
         {
-            bossAnim.SetBool("isCritical", false);
-            StopCoroutine(RotateBullet());
-            StopCoroutine(MissileBullet());
-            StopCoroutine(Rush());
-            patternLevel = Random.Range(1, 4);
+            patternLevel = Random.Range(1, 2);
             switch (patternLevel)
             {
                 case 1:
                     StartCoroutine(Turret());
                     break;
                 case 2:
-                    StartCoroutine(SkyBullet());
                     break;
                 case 3:
-                    StartCoroutine(Splash());
                     break;
             }
         }
@@ -270,93 +245,42 @@ public class BossSystem : MonoBehaviour
         bossAnim.SetInteger("PatternLevel", 3);
         lookPlayer();
         yield return new WaitForSeconds(1f);
-        if (speedX > rig2D.velocity.x)
+        isWall = false;
+        while (!isWall)
         {
-            rig2D.AddForce(transform.right * DIRECTION * 1000);
-        }  
+            yield return new WaitForSeconds(0.1f);
+            if (speedX > rig2D.velocity.x)
+            {
+                rig2D.AddForce(transform.right * DIRECTION * 1000);
+            }
+        }
         Idle();
-        transform.position = curPos;
-        yield return endOfPatternWait;
         lookPlayer();
+        yield return endOfPatternWait;
         BossPattern();
     }
     IEnumerator Turret()
     {
-        bossAnim.SetInteger("PatternLevel", 3);
-        gameObject.GetComponent<SpriteRenderer>().color = Color.red;
-        foreach(SpriteRenderer renderer in bulletPos)
-        {
-            renderer.enabled = true;
-        }
         yield return new WaitForSeconds(1f);
-        StartCoroutine(roopOutPattern());
-        isPattern = true;
-        while (isPattern)
+        foreach (Transform turret in turretPos)
         {
-            foreach(Transform Turret in turretPos)
+            if (isTurret == false) Instantiate(bossTurret[0], turret.position, turret.rotation);
+            turretCount++;
+            if (turretCount >= 3)
             {
-                Instantiate(bossBullet[1], Turret.position, Turret.rotation);
+                isTurret = true;
             }
-            yield return new WaitForSeconds(0.03f);
+
         }
-        Idle();
-        gameObject.GetComponent<SpriteRenderer>().color = Color.white;
-        foreach (SpriteRenderer renderer in bulletPos)
-        {
-            renderer.enabled = false;
-        }
-        yield return endOfPatternWait;
-        BossPattern();
-    }
-    IEnumerator SkyBullet()
-    {
-        bossAnim.SetInteger("PatternLevel", 3);
-        yield return new WaitForSeconds(1f);
-        StartCoroutine(roopOutPattern());
-        isPattern = true;
-        foreach (GameObject razer in razerBullet)
-        {
-            razer.SetActive(true);
-        }
-        while (isPattern == true)
-        {
-            yield return new WaitForSeconds(0.1f);
-            foreach (Transform bullet in skyBulletPos)
-            {
-                Vector3 direction = (target.position - bullet.position).normalized;
-                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-                bullet.transform.rotation = Quaternion.Euler(0, 0, angle);
-                Instantiate(bossBullet[0], bullet.position, bullet.rotation);
-                yield return new WaitForSeconds(0.15f);
-            }
-        }
-        foreach (GameObject razer in razerBullet)
-        {
-            razer.SetActive(false);
-        }
-        Idle();
-        yield return endOfPatternWait;
-        BossPattern();
-    }
-    IEnumerator Splash()
-    {
-        bossAnim.SetInteger("PatternLevel", 3);
-        gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-        yield return new WaitForSeconds(0.7f);
-        StartCoroutine(roopOutPattern());
-        isPattern = true;
-        while (isPattern)
-        {
-            yield return new WaitForSeconds(1f);
-            foreach (Transform bullet in splashBulletPos)
-            {
-                Instantiate(bossBullet[0], bullet.position, bullet.rotation);
-            }
-        }
-        Idle();
-        gameObject.GetComponent<SpriteRenderer>().color = Color.white;
         yield return endOfPatternWait;
         BossPattern();
 
+    }
+    void isBossRoom()
+    {
+        if (PlayerController.Instance.isBossRoom == true)
+        {
+            bossProfile.SetActive(true);
+        }
     }
 }

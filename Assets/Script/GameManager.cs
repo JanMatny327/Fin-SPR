@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
 
     public void SettingUI()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !PlayerController.Instance.dieState && !PlayerController.Instance.isCutScene)
+        if (Input.GetKeyDown(KeyCode.Escape) && !PlayerController.Instance.dieState)
         {
             if (!Panel.activeSelf)
             {

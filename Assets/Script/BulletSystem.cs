@@ -40,7 +40,7 @@ public class BulletSystem : MonoBehaviour
 
     private void Start()
     {
-        Invoke("DestroyBullet", 3.7f);
+        Invoke("DestroyBullet", 6f);
         if (whobulletType == WhoBulletType.playerBullet)
             rb.velocity = transform.right * bulletSpeed;
         if (whobulletType == WhoBulletType.enemyBullet)
@@ -67,16 +67,9 @@ public class BulletSystem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (whobulletType == WhoBulletType.playerBullet && other.CompareTag("Enemy")) // 총알에 닿은 대상에 태그가 "Enemy"일 경우
+        if (whobulletType == WhoBulletType.playerBullet && other.gameObject.tag == "Enemy") // 총알에 닿은 대상에 태그가 "Enemy"일 경우
         {
             other.GetComponent<EnemySystem>().getDamage(PlayerController.Instance.gameData.damage);
-            DestroyBullet();
-            return;
-        }
-
-        if (whobulletType == WhoBulletType.playerBullet && other.CompareTag("boss"))
-        {
-            other.GetComponent<BossSystem>().getDamage(PlayerController.Instance.gameData.damage);
             DestroyBullet();
             return;
         }
@@ -86,13 +79,11 @@ public class BulletSystem : MonoBehaviour
 
         if (whobulletType == WhoBulletType.bossBullet && other.gameObject.tag == "Player")
         {
-            PlayerController.Instance.takeDamage(this.bulletDamage);
-            DestroyBullet();
             if (abilityBulletType == AbilityBulletType.missile)
             { PlayerController.Instance.takeDamage(bulletDamage); DestroyBullet(); return; }
         }
 
-        if (other.CompareTag("Ground") || other.gameObject.tag == "Wall")
+        if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Wall")
         {
             DestroyBullet();
             return;
