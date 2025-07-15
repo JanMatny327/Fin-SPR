@@ -1,0 +1,411 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\typeeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\typeeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\trap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\talkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\talkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\stat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\stat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\settingsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\settingsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\scenemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scenemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\objdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\objdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\npcsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\npcsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\mainloaded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\mainloaded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\inventorysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\inventorysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\ghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\followcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\followcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\enemysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\enemysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\bulletsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\bulletsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\bossturretsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\bossturretsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\bosssystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\bosssystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\script\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|c:\\users\\chbai\\documents\\github\\fin-spr\\assets\\testplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B374F0F-168B-C7FA-BA11-9AE37ED0FE7D}|Assembly-CSharp.csproj|solutionrelative:assets\\testplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TypeEffect.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\TypeEffect.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\TypeEffect.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\TypeEffect.cs",
+              "RelativeToolTip": "Assets\\Script\\TypeEffect.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:56:43.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Trap.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\Trap.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Trap.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\Trap.cs",
+              "RelativeToolTip": "Assets\\Script\\Trap.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:56:23.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TalkManager.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\TalkManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\TalkManager.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\TalkManager.cs",
+              "RelativeToolTip": "Assets\\Script\\TalkManager.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:56:09.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Stat.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\Stat.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Stat.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\Stat.cs",
+              "RelativeToolTip": "Assets\\Script\\Stat.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:56:00.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SoundManager.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\SoundManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\SoundManager.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\SoundManager.cs",
+              "RelativeToolTip": "Assets\\Script\\SoundManager.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAIwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:55:35.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SettingsManager.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\SettingsManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\SettingsManager.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\SettingsManager.cs",
+              "RelativeToolTip": "Assets\\Script\\SettingsManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:55:20.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SceneMove.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\SceneMove.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\SceneMove.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\SceneMove.cs",
+              "RelativeToolTip": "Assets\\Script\\SceneMove.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:55:05.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Script\\PlayerController.cs",
+              "ViewState": "AgIAAOMBAAAAAAAAAADwv/4BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:54:27.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ObjData.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\ObjData.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ObjData.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\ObjData.cs",
+              "RelativeToolTip": "Assets\\Script\\ObjData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:54:10.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NPCSystem.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\NPCSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\NPCSystem.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\NPCSystem.cs",
+              "RelativeToolTip": "Assets\\Script\\NPCSystem.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:53:53.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainLoaded.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\MainLoaded.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\MainLoaded.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\MainLoaded.cs",
+              "RelativeToolTip": "Assets\\Script\\MainLoaded.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:53:52.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ItemManager.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\ItemManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ItemManager.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\ItemManager.cs",
+              "RelativeToolTip": "Assets\\Script\\ItemManager.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAUwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:52:49.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "InventorySystem.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\InventorySystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\InventorySystem.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\InventorySystem.cs",
+              "RelativeToolTip": "Assets\\Script\\InventorySystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:52:47.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Ghost.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\Ghost.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Ghost.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\Ghost.cs",
+              "RelativeToolTip": "Assets\\Script\\Ghost.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvyQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:52:36.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameManager.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Script\\GameManager.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAADwv3QAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:52:16.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FollowCam.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\FollowCam.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\FollowCam.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\FollowCam.cs",
+              "RelativeToolTip": "Assets\\Script\\FollowCam.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAADwv0kAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:51:57.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EventManager.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\EventManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\EventManager.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\EventManager.cs",
+              "RelativeToolTip": "Assets\\Script\\EventManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:51:52.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EnemySystem.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\EnemySystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\EnemySystem.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\EnemySystem.cs",
+              "RelativeToolTip": "Assets\\Script\\EnemySystem.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAwwL8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:51:29.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BulletSystem.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\BulletSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\BulletSystem.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\BulletSystem.cs",
+              "RelativeToolTip": "Assets\\Script\\BulletSystem.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAADwv1UAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:51:13.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BossTurretSystem.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\BossTurretSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\BossTurretSystem.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\BossTurretSystem.cs",
+              "RelativeToolTip": "Assets\\Script\\BossTurretSystem.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAADwv0oAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:50:55.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BossSystem.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\BossSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\BossSystem.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\BossSystem.cs",
+              "RelativeToolTip": "Assets\\Script\\BossSystem.cs",
+              "ViewState": "AgIAAAMBAAAAAAAAAADwvx4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:50:24.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BackGround.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\BackGround.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\BackGround.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\Script\\BackGround.cs",
+              "RelativeToolTip": "Assets\\Script\\BackGround.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:48:22.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TestPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\TestPlayer.cs",
+              "RelativeDocumentMoniker": "Assets\\TestPlayer.cs",
+              "ToolTip": "C:\\Users\\chbai\\Documents\\GitHub\\Fin-SPR\\Assets\\TestPlayer.cs",
+              "RelativeToolTip": "Assets\\TestPlayer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:48:10.774Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
